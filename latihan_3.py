@@ -1,0 +1,16 @@
+harga_awal = float(input("Masukkan harga awal per saham (Rp): "))
+harga_akhir = float(input("Masukkan harga akhir per saham (Rp): "))
+jumlah_saham = int(input("Masukkan jumlah saham: "))
+
+print("===============================")
+print("Perhitungan Keuntungan Saham")
+print("===============================")
+
+print("-------------------------------")
+print("Keuntungan Setelah 1 Tahun")
+print("-------------------------------")
+print("Harga awal per saham: Rp. ", harga_awal)
+print("Harga akhir per saham: Rp. ", harga_akhir)
+print("Jumlah saham: ", jumlah_saham)
+print("Total Keuntungan (Rp): ", (harga_akhir - harga_awal) * jumlah_saham)
+print("Persentase Keuntungan :", ((harga_akhir - harga_awal) / harga_awal) * 100, "%")
