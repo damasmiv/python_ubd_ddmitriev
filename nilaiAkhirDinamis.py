@@ -21,10 +21,10 @@ hasil_akhir = bobot_uts + bobot_uas + bobot_tugas + bobot_proyek / 4
 
 print("Mahasiswa yang bernama : ", nama )
 print("dengan  nilai presentasi yang dihasilkan")
-print("\tNilai UTS * ", nilai_uts)
-print("\tNilai UAS * ", nilai_uas)
-print("\tNilai Tugas * ", nilai_tugas)
-print("\tNilai Proyek * ", nilai_proyek)
+print("\tNilai UTS * ", bobot_uts, "% : ", nilai_uts)
+print("\tNilai UAS * ", bobot_uas, "% : ", nilai_uas)
+print("\tNilai Tugas * ", bobot_tugas, "% : ", nilai_tugas)
+print("\tNilai Proyek * ", bobot_proyek, "% : ", nilai_proyek)
 
 print("Nilai akhir yang diperoleh Mahasiswa: ", nama, "Nim: ", nim, "Adalah : ", hasil_akhir)
 
