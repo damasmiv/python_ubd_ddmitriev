@@ -28,3 +28,5 @@ print("\tNilai Proyek * ", bobot_proyek, "% : ", nilai_proyek)
 
 print("Nilai akhir yang diperoleh Mahasiswa: ", nama, "Nim: ", nim, "Adalah : ", hasil_akhir)
 
+
+
