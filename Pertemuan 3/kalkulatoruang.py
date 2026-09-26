@@ -66,4 +66,4 @@ if koin_200 > 0:
     print(f"{koin_200} uang koin 200 Rupiah")
 
 if koin_100 > 0:
-    print(f"{koin_100} uang koin 500 Rupiah")
+    print(f"{koin_100} uang koin 100 Rupiah")
