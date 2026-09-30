@@ -78,8 +78,8 @@ total_gaji = gaji_pokok + gaji_tambahan + total_honor
 print("\nInformasi Karyawan:")
 print("Kategori Jabatan: ",jenis)
 print("Kategori Pendidikan: ",pddk)
-print("Lama Bekerja: ",durasi)
-print("Lama Jam Lembur",jam_lembur)
+print("Lama Bekerja: ",durasi, "Tahun")
+print("Lama Jam Lembur: ",jam_lembur, "Jam")
 print(f"Honor Lembur per Jam: Rp.{honor_lembur:,.0f}")
 print(f"Total Gaji Karyawan: Rp.{total_gaji:,.0f}")
 
