@@ -4,33 +4,34 @@ print("----------------------------------")
 
 # USER INPUT SECTION
 
-while True:
-    jabatan = input("Kategori Jabatan (M / S / K): ").upper()
-    if jabatan == "M":
+jabatan = input("Kategori Jabatan (M / S / K): ").upper()
+if jabatan == "M":
         jenis = "Manajer"
-        break
-    elif jabatan == "S":
+        
+elif jabatan == "S":
         jenis = "Supervisor"
-        break
-    elif jabatan == "K":
+        
+elif jabatan == "K":
         jenis = "Karyawan Biasa"
-        break
-    else:
-        print("Kategori Jabatan tidak Valid!")
+        
+else:
+    print("Kategori Jabatan tidak Valid!")
+    exit()
 
-while True:
-    pendidikan = input("Kategori Pendidikan (SMA / D3 / S1): ").upper()
-    if pendidikan == "SMA":
+
+pendidikan = input("Kategori Pendidikan (SMA / D3 / S1): ").upper()
+if pendidikan == "SMA":
         pddk = "SMA"
-        break
-    elif pendidikan == "D3":
+        
+elif pendidikan == "D3":
         pddk = "D3"
-        break
-    elif pendidikan == "S1":
+       
+elif pendidikan == "S1":
         pddk = "S1"
-        break
-    else:
+        
+else:
         print("Kategori Pendidikan tidak Valid!")
+        exit()
 
 durasi = int(input("Lama Bekerja (Dalam Tahun): "))
 

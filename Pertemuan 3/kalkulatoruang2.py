@@ -6,7 +6,7 @@ jumlah_uang = int(input("Masukkan Jumlah Uang Ali: "))
 print("Jumlah Uang Ali: ", jumlah_uang)
 
 #LOGIC
-pecahan = [100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100]
+pecahan = [100000, 50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1]
 
 print("Kombinasi Pecahan Mata Uang Rupiah yang paling Mungkin: ")
 
@@ -15,5 +15,4 @@ for p in pecahan:
     jumlah_uang = jumlah_uang % p
 
     if lembar > 0:
-        print(f"{lembar} lembar uang {p:,.0f} Rupiah.")
-        
+        print(f"{lembar} lembar/keping uang {p:,.0f} Rupiah.")

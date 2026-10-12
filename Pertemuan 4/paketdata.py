@@ -22,40 +22,43 @@ harga_b_x = 43000
 harga_c_x = 85000
 
 
+userInput = input("\nMasukkan Kode Operator: ").upper()
+if userInput == "T":
+    nama_operator = "Telkomsel"
+    print("\nPiihan Besaran Paket (Kode)")
+    print("- A: 2GB\n- B: 5GB\n- C: 10GB")
 
-while True:
-    userInput = input("\nMasukkan Kode Operator: ").upper()
-    if userInput == "T":
-        nama_operator = "Telkomsel"
-        print("\nPiihan Besaran Paket (Kode)")
-        print("- A: 2GB\n- B: 5GB\n- C: 10GB")
-        break
-    elif userInput == "I":
-        nama_operator = "Indosat"
-        print("\nPiihan Besaran Paket (Kode)")
-        print("- A: 2GB\n- B: 5GB\n- C: 10GB")
-        break
-    elif userInput == "X":
-        nama_operator = "XL Axiata"
-        print("\nPiihan Besaran Paket (Kode)")
-        print("- A: 2GB\n- B: 5GB\n- C: 10GB")
-        break
-    else:
-        print("Kode Tidak Ditemukan! silahkan masukkan kode yang benar")
 
-while True:
-    paketdata = input("\nMasukkan Kode Besaran Paket: ").upper()
-    if paketdata == "A":
-        besaran_paket = "2GB"
-        break
-    elif paketdata == "B":
-        besaran_paket = "5GB"
-        break
-    elif paketdata == "C":
-        besaran_paket = "10GB"
-        break
-    else:
-        print("Kode Tidak Sesuai! silahkan masukkan kode yang benar")
+elif userInput == "I":
+    nama_operator = "Indosat"
+    print("\nPiihan Besaran Paket (Kode)")
+    print("- A: 2GB\n- B: 5GB\n- C: 10GB")
+
+
+elif userInput == "X":
+    nama_operator = "XL Axiata"
+    print("\nPiihan Besaran Paket (Kode)")
+    print("- A: 2GB\n- B: 5GB\n- C: 10GB")
+
+else:
+    print("Kode Operator Tidak Sesuai! silahkan masukkan kode yang benar")
+    exit()
+    
+
+
+paketdata = input("\nMasukkan Kode Besaran Paket: ").upper()
+if paketdata == "A":
+    besaran_paket = "2GB"
+
+elif paketdata == "B":
+    besaran_paket = "5GB"
+
+elif paketdata == "C":
+    besaran_paket = "10GB"
+
+else:
+    print("Kode Tidak Sesuai! silahkan masukkan kode yang benar")
+    exit()
 
 # PENENTU HARGA
 harga_satuan = 0

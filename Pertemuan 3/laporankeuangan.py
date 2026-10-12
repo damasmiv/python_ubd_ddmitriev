@@ -20,6 +20,3 @@ print(f"Total Pengeluaran: Rp.{total_pengeluaran:,.0f}\n")
 print(f"Tabungan: Rp.{gaji_andi * tabungan:,.0f}")
 print(f"Investasi: Rp.{gaji_andi * investasi:,.0f}\n")
 print("======================================================")
-
-
-

@@ -14,7 +14,7 @@ if rata_rata >= 85:
     hadiah = "Komputer"
 elif rata_rata >= 70:
     hadiah = "Uang Tunai Sebesar Rp.500,000"
-elif rata_rata <= 70:
+else:
     hadiah = "Hiburan"
 
 
@@ -23,9 +23,9 @@ print("Hasil Perhitungan")
 print("=================\n")
 
 print("Nama Siswa: ", nama)
-print("Nilai Rata-Rata: ", rata_rata)
+print(f"Nilai Rata-Rata: {rata_rata:.1f}")
 
-print("\nSelamat, Anda mendapatkan Hadiah:\n",hadiah)
+print("\nSelamat, Anda mendapatkan Hadiah:",hadiah)
 
 
 
