@@ -12,6 +12,7 @@ print("1. Teh Manis - Rp 5.000")
 print("2. Es Jeruk - Rp 7.000")
 print("3. Kopi Hitam - Rp 8.000")
 print("4. Air Mineral - Rp 3.000\n")
+
 #INPUT SECTION
 while True:
     while True:
