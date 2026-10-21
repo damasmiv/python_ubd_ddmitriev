@@ -25,7 +25,7 @@ print("=================\n")
 print("Nama Siswa: ", nama)
 print(f"Nilai Rata-Rata: {rata_rata:.1f}")
 
-print("\nSelamat, Anda mendapatkan Hadiah:",hadiah)s
+print("\nSelamat, Anda mendapatkan Hadiah:",hadiah)
 
 
 
