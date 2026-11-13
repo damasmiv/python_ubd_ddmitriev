@@ -3,7 +3,7 @@ def hitung_bmr(bb, tb, jenis_kelamin, usia):
         bmr = 88.362 + (13.397 * bb) + (4.799 * tb) - (5.677 * usia)
     elif jenis_kelamin == "W":
         bmr = 447.593 + (9.247 * bb) + (3.098 * tb) - (4.330 * usia)
-    print(f"\nKebutuhan Kalori Harian Anda: {bmr:.0f}")
+    print(f"\nKebutuhan Kalori Harian Anda: {bmr:.0f} Kalori")
 
 def hitung_bmi(bb, tb):
     bmi = bb / ((tb/100) ** 2)
@@ -15,7 +15,7 @@ def hitung_bmi(bb, tb):
         kategori = "Gemuk"
     else:
         kategori = "Obesitas"
-    print(f"BMI Anda: {bmi:.2f}")
+    print(f"\nBMI Anda: {bmi:.2f}")
     print(f"Kategori BMI: {kategori}")
 
 print("*** UJIAN TENGAH SEMESTER 20261 ***")
@@ -32,16 +32,16 @@ while True:
     print("4. Keluar")
     pilihan = int(input("\nPilihan Anda: "))
     if pilihan == 1:
-        status_datadiri = True
         bb = int(input("Masukkan Berat Badan (Kg): "))
         tb = int(input("Masukkan Tinggi Badan (CM): "))
         while True:
-            jenis_kelamin = (input("Masukkan Jenis Kelamin (P/W): ")).upper()
+            jenis_kelamin = input("Masukkan Jenis Kelamin (P/W): ").upper()
             if jenis_kelamin != "P" and jenis_kelamin != "W":
                 print("Jenis Kelamin harus (P)ria / (W)anita!")
             else:
                 break
         usia = int(input("Masukkan Usia: "))
+        status_datadiri = True
     elif pilihan == 2:
         if status_datadiri:
             hitung_bmr(bb, tb, jenis_kelamin, usia)

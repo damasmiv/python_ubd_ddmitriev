@@ -49,7 +49,6 @@ while True:
     print("5. Keluar")
     pilihan = int(input("Pilihan Anda: "))
     while True:
-
         if pilihan == 1:
             print("\nJenis Paket:")
             print("1. Basic")
@@ -78,20 +77,13 @@ while True:
             break
         elif pilihan == 4:
             if status_jumlah and status_durasi and status_paket:
-                hasil = hitung_detailpaket(jenispaket, durasi, jumlahvideo)
-                print(hasil)
+                hitung_detailpaket(jenispaket, durasi, jumlahvideo)
             else:
                 print("\nTidak dapat menampilkan informasi total, tolong masukkan detail terlebih dahulu!")
             break
         elif pilihan == 5:
             print("\nTerima kasih sudah menggunakan Aplikasi")
             exit()
-
-
-
-                
-           
-                
-
-
-
+        else:
+            print("\nPilihan tidak valid! silahkan pilih 1-5!")
+            break
